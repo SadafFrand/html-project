@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+        <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-container">
+      <h1>Get in Touch</h1>
+      <p>If you have any questions, feedback, or just want to say hi, feel free to contact me!</p>
+
+    
+
+      <form action="mailto:sadaf.frand2007@gmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <p>Gender:</p>
+          <label><input type="radio" name="gender" value="Female" required> Female</label>
+          <label><input type="radio" name="gender" value="Male"> Male</label>
+        </div>
+
+        <div class="form-group">
+          <p>Interests:</p>
+          <label><input type="checkbox" name="interests" value="Art"> Art</label>
+          <label><input type="checkbox" name="interests" value="Music"> Music</label>
+          <label><input type="checkbox" name="interests" value="Writing"> Writing</label>
+        </div>
+
+        <input type="submit" value="Send Message" class="submit-btn">
+      </form>
+
+      <p class="alt-contact">Or contact me directly: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Creative World</p>
+  </footer>
+
+</body>
+</html>
